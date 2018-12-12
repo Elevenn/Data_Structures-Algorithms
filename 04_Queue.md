@@ -54,7 +54,7 @@
   ```
 * 链式队列
 
-* ```
+* ```Objective-C
   @implementation XXNode
 
   - (instancetype)init {
@@ -76,7 +76,7 @@
   }
 
   @end
-
+```
 
   @implementation XXLinkedList
 
