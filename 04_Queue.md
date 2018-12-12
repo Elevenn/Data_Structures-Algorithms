@@ -86,7 +86,7 @@
           _head = nil;
           _tail = _head;
       }
-    
+
       return self;
   }
 
@@ -95,13 +95,13 @@
           _head = head;
           _tail = _head;
       }
-    
+
       return self;
   }
 
   - (void)append:(id)value {
       XXNode *tmp = [[XXNode alloc] initWithValue:value];
-    
+
       if (self.head == nil) {
           self.head = tmp;
           self.tail = self.head;
@@ -114,10 +114,10 @@
 
   - (void)prepend:(id)value {
       XXNode *tmp = [[XXNode alloc] initWithValue:value];
-    
+
       tmp.next = self.head;
       self.head = tmp;
-    
+
       if (self.head.next == nil) {
           self.tail = self.head;
       }
@@ -127,6 +127,32 @@
       XXNode *tmp = self.head;
       self.head = self.head.next;
       tmp.next = nil;
+  }
+
+  @end
+  ```
+
+  ```
+  @implementation XXStackQueue
+
+  - (instancetype)init {
+      if (self = [super init]) {
+          _linkedList = [[XXLinkedList alloc] init];
+      }
+    
+      return self;
+  }
+
+  - (BOOL)enqueue:(id)obj {
+      [self.linkedList append:obj];
+    
+      return YES;
+  }
+
+  - (id)dequeue {
+      [self.linkedList deleteHeadNode];
+    
+      return nil;
   }
 
   @end
