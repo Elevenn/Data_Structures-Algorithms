@@ -54,8 +54,7 @@
   ```
 * 链式队列
 
-* ```Objective-C
-  //    结点
+* ```
   @implementation XXNode
 
   - (instancetype)init {
@@ -79,7 +78,6 @@
   @end
 
 
-  //    链表
   @implementation XXLinkedList
 
   - (instancetype)init {
@@ -134,7 +132,6 @@
   @end
 
 
-  //    链式队列
   @implementation XXStackQueue
 
   - (instancetype)init {
