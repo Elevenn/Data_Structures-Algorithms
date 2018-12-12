@@ -56,6 +56,7 @@
 * 链式队列
 
 * ```Objective-C
+  //    结点
   @implementation XXNode
 
   - (instancetype)init {
@@ -79,6 +80,7 @@
   @end
   ```
 * ```Objective-C
+  //    链表
   @implementation XXLinkedList
 
   - (instancetype)init {
@@ -139,19 +141,19 @@
       if (self = [super init]) {
           _linkedList = [[XXLinkedList alloc] init];
       }
-    
+
       return self;
   }
 
   - (BOOL)enqueue:(id)obj {
       [self.linkedList append:obj];
-    
+
       return YES;
   }
 
   - (id)dequeue {
       [self.linkedList deleteHeadNode];
-    
+
       return nil;
   }
 
