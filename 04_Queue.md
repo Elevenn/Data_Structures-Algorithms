@@ -132,7 +132,7 @@
   @end
   ```
 
-  ```
+  ```Objective-C
   @implementation XXStackQueue
 
   - (instancetype)init {
