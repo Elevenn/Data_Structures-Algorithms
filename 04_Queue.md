@@ -135,6 +135,7 @@
   ```
 
   ```Objective-C
+  //    链式队列
   @implementation XXStackQueue
 
   - (instancetype)init {
