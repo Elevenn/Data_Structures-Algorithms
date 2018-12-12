@@ -77,7 +77,60 @@
 
   @end
   ```
-* 
+* ```
+  @implementation XXLinkedList
+
+  - (instancetype)init {
+      if (self = [super init]) {
+          _head = nil;
+          _tail = _head;
+      }
+    
+      return self;
+  }
+
+  - (instancetype)initWithHead:(XXNode *)head {
+      if (self = [super init]) {
+          _head = head;
+          _tail = _head;
+      }
+    
+      return self;
+  }
+
+  - (void)append:(id)value {
+      XXNode *tmp = [[XXNode alloc] initWithValue:value];
+    
+      if (self.head == nil) {
+          self.head = tmp;
+          self.tail = self.head;
+      } else {
+          tmp.next = self.tail.next;
+          self.tail.next = tmp;
+          self.tail = tmp;
+      }
+  }
+
+  - (void)prepend:(id)value {
+      XXNode *tmp = [[XXNode alloc] initWithValue:value];
+    
+    
+      tmp.next = self.head;
+      self.head = tmp;
+    
+      if (self.head.next == nil) {
+          self.tail = self.head;
+      }
+  }
+
+  - (void)deleteHeadNode {
+      XXNode *tmp = self.head;
+      self.head = self.head.next;
+      tmp.next = nil;
+  }
+
+  @end
+  ```
 * ```Objective-C
   @implementation XXStackQueue
 
