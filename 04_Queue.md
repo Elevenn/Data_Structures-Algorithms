@@ -77,7 +77,7 @@
 
   @end
 ```
-
+* ```Objective-C
   @implementation XXLinkedList
 
   - (instancetype)init {
@@ -130,8 +130,9 @@
   }
 
   @end
+```
 
-
+* ```Objective-C
   @implementation XXStackQueue
 
   - (instancetype)init {
