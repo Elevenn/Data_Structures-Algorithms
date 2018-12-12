@@ -1,8 +1,8 @@
-# Summary
+# Table of contents
 
-* [Introduction](README.md)
-* [Array](01_Array.md)
-* [LinkedList](02_LinkedList.md)
-* [Stack](03_Stack.md)
-* [Queue](04_Queue.md)
+* [Data\_Structures-Algorithms](README.md)
+* [01\_Array](01_array.md)
+* [04\_Queue](04_queue.md)
+* [02\_LinkedList](02_linkedlist.md)
+* [03\_Stack](03_stack.md)
 
