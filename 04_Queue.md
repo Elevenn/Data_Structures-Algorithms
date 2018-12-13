@@ -1,11 +1,5 @@
 * 顺序队列
 
-
-
-&lt;details&gt;
-
-
-
 * ```Objective-C
   @implementation XXArrayQueue
 
@@ -59,10 +53,6 @@
 
   @end
   ```
-
-&lt;/details&gt;
-
-
 
 * 链式队列
 
