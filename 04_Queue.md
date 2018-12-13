@@ -19,6 +19,8 @@
 
 * **并发队列**
 
+  * 并发队列是线程安全的队列
+
 ### Talk  is cheap, show you code
 
 * 顺序队列
